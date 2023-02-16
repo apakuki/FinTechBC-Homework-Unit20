@@ -1,0 +1,107 @@
+{
+	"compiler": {
+		"version": "0.5.17+commit.d19bba13"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"payable": true,
+				"stateMutability": "payable",
+				"type": "fallback"
+			},
+			{
+				"constant": false,
+				"inputs": [],
+				"name": "deposit",
+				"outputs": [],
+				"payable": true,
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "lastToWithdraw",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"internalType": "address payable",
+						"name": "account1",
+						"type": "address"
+					},
+					{
+						"internalType": "address payable",
+						"name": "account2",
+						"type": "address"
+					}
+				],
+				"name": "setAccounts",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address payable",
+						"name": "recipient",
+						"type": "address"
+					}
+				],
+				"name": "withdraw",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Starter_Code/joint_savings.sol": "JointSavings"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Starter_Code/joint_savings.sol": {
+			"keccak256": "0xe95470a53e766b6b19d3ad1f11391c8f024ab993a9c23e19ed6d297c9b1fc8e6",
+			"urls": [
+				"bzz-raw://123ec9fa39caa96376b2b8809df0ba38b2a4df4a764ae7af6c3ab583881096e8",
+				"dweb:/ipfs/QmSz9gPx6Jtth8VHR9Szzj2qLSXdwqX778gYAbsno5NbZ8"
+			]
+		}
+	},
+	"version": 1
+}
