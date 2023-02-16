@@ -28,8 +28,8 @@ contract JointSavings {     // Contract Address: 0xd22Ef127a34f31Aa3D3Fc232E1718
     */
     // YOUR CODE HERE!
 
-    address payable accountOne;     //Account One Address: 0x1533115192019ae7549bF30C69203946eF65ECfA
-    address payable accountTwo;     //Account Two Address: 0x6743C74f65409423CA69784222ed34aDbe06E770
+    address payable accountOne;     //Account One Address: 0x6642895D8e8D4ae51BD049Be008e26b0FDf5E8Dd
+    address payable accountTwo;     //Account Two Address: 0x67B06257F7A8a79F54A6abB72c341625d414E415
 
     address public lastToWithdraw;
 
@@ -72,9 +72,9 @@ contract JointSavings {     // Contract Address: 0xd22Ef127a34f31Aa3D3Fc232E1718
 
         // Call the `contractBalance` variable and set it equal to the balance of the contract by using `address(this).balance` to reflect the new balance of the contract.
         // YOUR CODE HERE!
-            contractBalance = address(this).balance;
+            contractBalance = address(this).balance - amount;
 
-        
+            return msg.sender.transfer(amount);
     }
 
     // Define a `public payable` function named `deposit`.
