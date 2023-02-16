@@ -18,7 +18,7 @@ You will do the following:
 pragma solidity ^0.5.0;
 
 // Define a new contract named `JointSavings`
-contract JointSavings {
+contract JointSavings {     // Contract Address: 0xd22Ef127a34f31Aa3D3Fc232E1718d72e22fe26a
 
     /*
     Inside the new contract define the following variables:
@@ -28,8 +28,8 @@ contract JointSavings {
     */
     // YOUR CODE HERE!
 
-    address payable accountOne;
-    address payable accountTwo;
+    address payable accountOne;     //Account One Address: 0x1533115192019ae7549bF30C69203946eF65ECfA
+    address payable accountTwo;     //Account Two Address: 0x6743C74f65409423CA69784222ed34aDbe06E770
 
     address public lastToWithdraw;
 
@@ -47,7 +47,7 @@ contract JointSavings {
         Define a `require` statement that checks if the `recipient` is equal to either `accountOne` or `accountTwo`. The `requiere` statement returns the text `"You don't own this account!"` if it does not.
         */
         // YOUR CODE HERE!
-        require((recipient==accountOne) || (recipient==accountTwo), "You don't won this account!");
+        require((recipient==accountOne) || (recipient==accountTwo), "You don't own this account!");
 
         /*
         Define a `require` statement that checks if the `balance` is sufficient to accomplish the withdraw operation. If there are insufficient funds, the text `Insufficient funds!` is returned.
