@@ -29,7 +29,7 @@ contract JointSavings {     // Contract Address: 0xd22Ef127a34f31Aa3D3Fc232E1718
     // YOUR CODE HERE!
 
     address payable accountOne;     //Account One Address: 0x53368174C699936bA1FDF20C3dEcD0d820E955f5
-    address payable accountTwo;     //Account Two Address: 0x53368174C699936bA1FDF20C3dEcD0d820E955f5
+    address payable accountTwo;     //Account Two Address: 0x2dd166DB3a15b099e57a491377C616cD9C8e13f5
 
     address public lastToWithdraw;
 
